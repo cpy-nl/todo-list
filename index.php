@@ -1,4 +1,3 @@
-<?php include 'db_connect.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,14 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>
-        <?php
-        if(db()) {
-          echo "Booyakasha!"
-        }
-        endif;
-        ?>
-      </h1>
+      <h1>Index</h1>
     </div>
   </body>
 </html>
