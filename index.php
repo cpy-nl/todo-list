@@ -1,4 +1,4 @@
-<?php include 'db_connect.php' ?>
+<?php include 'db_connect.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,15 +7,15 @@
     <title>Je moet connected zijn...</title>
   </head>
   <body>
-
-<div class="container">
-  <h1>
-    <?php
-    if(db()) {
-      echo "Booyakasha!"
-    }
-    ?>
-  </h1>
-</div>
+    <div class="container">
+      <h1>
+        <?php
+        if(db()) {
+          echo "Booyakasha!"
+        }
+        endif;
+        ?>
+      </h1>
+    </div>
   </body>
 </html>
