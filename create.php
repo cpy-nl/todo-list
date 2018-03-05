@@ -6,13 +6,16 @@
     <title>Create item</title>
   </head>
   <body>
-    <div class="container">
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
       <h1>Create item</h1>
-      <form method="post" action="create.php">
-       <label for="todoTitle">Title</label>
-       <input id="todoTitle" name="todoTitle" type="text" placeholder="enter your title"><br />
-       <label for="todoDescription">Notes</label>
-       <input id="todoDescription" name="todoDescription" type="text" placeholder="enter your notes">
+      <button class="btn btn-secondary btn-large" type="button" onclick="window.location.href='index.php'">Back</button>
+    </div>
+    <div class="container-fluid" style="margin-top:3rem;">
+      <form class="form-group" method="post" action="create.php">
+       <h2>Title</h2>
+       <input class="form-control" name="todoTitle" type="text" placeholder="Enter your title"><br />
+       <h2>Notes (optional)</h2>
+       <input class="form-control" name="todoDescription" type="text" placeholder="Enter your notes">
        <br><br>
        <input type="submit" name="submit" value="submit">
       </form>

@@ -7,8 +7,12 @@
     <title>Todo list</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Todo list</h2>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <h1>Todo list</h1>
+      <button type="button" class="btn btn-primary" onclick="window.location.href='create.php'">Add item</button>
+    </div>
+    <div class="container-fluid" style="margin-top:3rem;">
+      <ul class="list-group">
       <?php
       db();
       global $link;
@@ -21,17 +25,14 @@
           $title = $row['todoTitle'];
           $date = $row['date'];
       ?>
-      <ul class="list-group">
         <li class="list-group-item"><a href="item.php?id=<?php echo $id ?>"><?php echo $title ?></a> [<?php echo $date ?>]</li>
-      </ul>
+
       <?php
         }
       }
       ?>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button type="button" class="btn btn-primary" onclick="window.location.href='create.php'">Add item</button>
-      </nav>
+      </ul>
     </div>
+
   </body>
 </html>
